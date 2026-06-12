@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UFC Georgia — Official fan community celebrating Georgian UFC fighters including Merab Dvalishvili and Ilia Topuria. News, events, and MMA culture from the heart of Georgia.">
+  <title>UFC Georgia — Official Fan Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">UG</span>
+        UFC Georgia
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode">&#9728;</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <!--
+    HERO BACKGROUND: Place your image at images/hero-bg.jpg
+    Recommended: UFC octagon arena photo (1920x1080px)
+    Fallback: CSS gradient overlay ensures readability without image
+  -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Pride of Georgia</span>
+      <h1>UFC <span>Georgia</span></h1>
+      <p>Home of world champions Merab Dvalishvili and Ilia Topuria. Celebrating Georgian warriors who dominate the Octagon on the global stage.</p>
+      <div class="hero-buttons">
+        <a href="#fighters" class="btn btn-primary">Meet Our Fighters</a>
+        <a href="register.html" class="btn btn-outline">Join the Community</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Countdown Timer ========== -->
+  <section class="countdown-section" aria-label="Next UFC event countdown">
+    <div class="container countdown-wrapper">
+      <h3>Next UFC Event</h3>
+      <p class="countdown-event-name" id="countdownEventName">UFC 317 — T-Mobile Arena, Las Vegas</p>
+      <div class="countdown-timer">
+        <div class="countdown-item">
+          <span class="number" id="countdownDays">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number" id="countdownHours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number" id="countdownMinutes">00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number" id="countdownSeconds">00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== About UFC & MMA ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>About UFC &amp; MMA</h2>
+        <p>The Ultimate Fighting Championship is the world's premier mixed martial arts organization</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>The <strong>Ultimate Fighting Championship (UFC)</strong> is the largest and most prestigious mixed martial arts (MMA) promotion in the world. Founded in 1993, the UFC has grown from a single event into a global sports phenomenon broadcast in over 170 countries and territories, reaching hundreds of millions of fans worldwide.</p>
+          <p><strong>Mixed Martial Arts (MMA)</strong> is a full-contact combat sport that combines techniques from boxing, wrestling, Brazilian jiu-jitsu, Muay Thai, judo, karate, and other disciplines. Fighters compete inside the iconic eight-sided Octagon, testing their skills across striking, grappling, and ground fighting.</p>
+          <p>Georgia has emerged as a powerhouse nation in the UFC, producing multiple champions and top-ranked contenders. With a rich wrestling tradition dating back centuries — including the ancient Georgian sport of <strong>Khridoli</strong> — Georgian athletes bring unparalleled grappling expertise and fighting spirit to the global stage.</p>
+          <p>From the mountains of Svaneti to the streets of Tbilisi, Georgian fighters carry the pride of their nation into every bout, inspiring a new generation of martial artists across the Caucasus region.</p>
+        </div>
+        <div class="about-stats reveal-right">
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="2" data-suffix="">0</span>
+            <span class="stat-label">Georgian UFC Champions</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="12" data-suffix="+">0</span>
+            <span class="stat-label">Georgian UFC Fighters</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="500" data-suffix="+">0</span>
+            <span class="stat-label">Total UFC Events</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="700" data-suffix="+">0</span>
+            <span class="stat-label">Active UFC Fighters</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Georgian UFC Stars ========== -->
+  <section class="section fighters-section" id="fighters">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Georgian UFC Stars</h2>
+        <p>Meet the warriors who carry the Georgian flag into the Octagon</p>
+      </div>
+
+      <div class="fighter-search reveal">
+        <span class="fighter-search-icon">&#128269;</span>
+        <input type="text" id="fighterSearch" placeholder="Search fighters by name, nickname, or division..." aria-label="Search fighters">
+      </div>
+
+      <div class="fighters-grid">
+        <!--
+          FIGHTER IMAGE: Place at images/merab-dvalishvili.jpg
+          Recommended: Professional fight photo, 600x800px portrait
+        -->
+        <div class="fighter-card reveal" data-id="merab" data-name="Merab Dvalishvili"
+             data-nickname="The Machine" data-division="Bantamweight Champion">
+          <div class="fighter-card-image">
+            <img src="images/merab-dvalishvili.jpg" alt="Merab Dvalishvili - UFC Bantamweight Champion"
+                 data-fallback="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=600&h=800&fit=crop">
+            <span class="fighter-card-badge">Champion</span>
+            <div class="fighter-card-overlay">
+              <h3>Merab Dvalishvili</h3>
+              <span class="nickname">"The Machine"</span>
+              <span class="record">Record: 19-4-0 | Bantamweight Champion</span>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          FIGHTER IMAGE: Place at images/ilia-topuria.jpg
+          Recommended: Professional fight photo, 600x800px portrait
+        -->
+        <div class="fighter-card reveal" data-id="ilia" data-name="Ilia Topuria"
+             data-nickname="El Matador" data-division="Featherweight Champion">
+          <div class="fighter-card-image">
+            <img src="images/ilia-topuria.jpg" alt="Ilia Topuria - UFC Featherweight Champion"
+                 data-fallback="https://images.unsplash.com/photo-1599058945522-28d584b6f5ff?w=600&h=800&fit=crop">
+            <span class="fighter-card-badge">Champion</span>
+            <div class="fighter-card-overlay">
+              <h3>Ilia Topuria</h3>
+              <span class="nickname">"El Matador"</span>
+              <span class="record">Record: 16-0-0 | Featherweight Champion</span>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          FIGHTER IMAGE: Place at images/giga-chikadze.jpg
+        -->
+        <div class="fighter-card reveal" data-id="giga" data-name="Giga Chikadze"
+             data-nickname="Ninja" data-division="Featherweight">
+          <div class="fighter-card-image">
+            <img src="images/giga-chikadze.jpg" alt="Giga Chikadze - UFC Featherweight"
+                 data-fallback="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=600&h=800&fit=crop">
+            <div class="fighter-card-overlay">
+              <h3>Giga Chikadze</h3>
+              <span class="nickname">"Ninja"</span>
+              <span class="record">Record: 14-4-0 | Featherweight</span>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          FIGHTER IMAGE: Place at images/roman-dolidze.jpg
+        -->
+        <div class="fighter-card reveal" data-id="roman" data-name="Roman Dolidze"
+             data-nickname="The Caucasian" data-division="Middleweight">
+          <div class="fighter-card-image">
+            <img src="images/roman-dolidze.jpg" alt="Roman Dolidze - UFC Middleweight"
+                 data-fallback="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=800&fit=crop">
+            <div class="fighter-card-overlay">
+              <h3>Roman Dolidze</h3>
+              <span class="nickname">"The Caucasian"</span>
+              <span class="record">Record: 15-3-0 | Middleweight</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clicked-fighter-display" id="clickedFighterDisplay" aria-live="polite">
+        Click a fighter card to view details
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== UFC Events Table ========== -->
+  <section class="section" id="events">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Upcoming UFC Events</h2>
+        <p>Don't miss the next blockbuster fight cards featuring Georgian talent</p>
+      </div>
+      <div class="events-table-wrapper reveal">
+        <table class="events-table">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Location</th>
+              <th>Main Event</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="event-main">UFC 317</td>
+              <td>June 28, 2026</td>
+              <td>T-Mobile Arena, Las Vegas, NV</td>
+              <td>Title Fight — Bantamweight</td>
+              <td><span class="badge-live">Upcoming</span></td>
+            </tr>
+            <tr>
+              <td class="event-main">UFC Fight Night</td>
+              <td>July 12, 2026</td>
+              <td>AB Arena, Tbilisi, Georgia</td>
+              <td>Georgian Showcase Card</td>
+              <td>Scheduled</td>
+            </tr>
+            <tr>
+              <td class="event-main">UFC 318</td>
+              <td>August 16, 2026</td>
+              <td>United Center, Chicago, IL</td>
+              <td>Topuria vs. Challenger</td>
+              <td>Scheduled</td>
+            </tr>
+            <tr>
+              <td class="event-main">UFC Fight Night</td>
+              <td>September 6, 2026</td>
+              <td>Apex, Las Vegas, NV</td>
+              <td>Dolidze vs. Top Contender</td>
+              <td>Scheduled</td>
+            </tr>
+            <tr>
+              <td class="event-main">UFC 319</td>
+              <td>October 4, 2026</td>
+              <td>Madison Square Garden, New York</td>
+              <td>Championship Double Header</td>
+              <td>Scheduled</td>
+            </tr>
+            <tr>
+              <td class="event-main">UFC 320</td>
+              <td>November 15, 2026</td>
+              <td>T-Mobile Arena, Las Vegas, NV</td>
+              <td>International Fight Week</td>
+              <td>Scheduled</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== YouTube Video Section ========== -->
+  <section class="section video-section" id="video">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>UFC Highlights</h2>
+        <p>Watch the most epic moments from the Octagon</p>
+      </div>
+      <div class="video-wrapper reveal">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OD6nPojxhM8?si=28t0y9eHq22r01yl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Image Gallery / Carousel ========== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Gallery</h2>
+        <p>Moments from the Octagon and Georgian MMA culture</p>
+      </div>
+
+      <!--
+        GALLERY IMAGES: Place in images/ folder
+        gallery-1.jpg through gallery-6.jpg (900x500px recommended)
+      -->
+      <div class="carousel reveal">
+        <div class="carousel-track" id="carouselTrack"></div>
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous slide">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext" aria-label="Next slide">&#10095;</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+      <div class="gallery-thumbnails" id="galleryThumbs"></div>
+    </div>
+  </section>
+
+  <!-- ========== Fighter Modal ========== -->
+  <div class="modal-overlay" id="fighterModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <img class="modal-image" id="modalImage" src="" alt="Fighter photo">
+      <div class="modal-body">
+        <h3 id="modalName"></h3>
+        <p class="modal-nickname" id="modalNickname"></p>
+        <p id="modalBio"></p>
+        <div class="modal-stats" id="modalStats"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">UG</span>
+            UFC Georgia
+          </a>
+          <p>The official fan community celebrating Georgian UFC fighters and mixed martial arts culture. Join thousands of passionate fans from Tbilisi to the world.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#fighters">Fighters</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Fighters</h4>
+          <ul>
+            <li><a href="#fighters">Merab Dvalishvili</a></li>
+            <li><a href="#fighters">Ilia Topuria</a></li>
+            <li><a href="#fighters">Giga Chikadze</a></li>
+            <li><a href="#fighters">Roman Dolidze</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Tbilisi, Georgia</a></li>
+            <li><a href="mailto:info@ufcgeorgia.ge">info@ufcgeorgia.ge</a></li>
+            <li><a href="tel:+995322000000">+995 32 200 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 UFC Georgia Fan Community. This is an unofficial fan website and is not affiliated with UFC or Endeavor Group.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

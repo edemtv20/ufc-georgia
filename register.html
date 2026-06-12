@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for UFC Georgia — Join the official fan community and get exclusive access to events, news, and fighter updates.">
+  <title>Register — UFC Georgia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">UG</span>
+        UFC Georgia
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode">&#9728;</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== Page Header ========== -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Join UFC Georgia</h1>
+      <p>Create your account and become part of the largest Georgian MMA fan community</p>
+    </div>
+  </header>
+
+  <!-- ========== Registration Form ========== -->
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container glass-card reveal">
+
+        <!-- Form Completion Progress Bar -->
+        <div class="progress-bar-container">
+          <div class="progress-bar-label">
+            <span>Form Completion</span>
+            <span id="progressText">0% Complete</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <form class="registration-form" id="registrationForm" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="given-name" required>
+              <span class="validation-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" autocomplete="family-name" required>
+              <span class="validation-message"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" autocomplete="email" required>
+            <span class="validation-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+995 5XX XX XX XX" autocomplete="tel" required>
+            <span class="validation-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="birthDate">Birth Date *</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+            <span class="validation-message"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Password *</label>
+              <input type="password" id="password" name="password" placeholder="Min. 8 characters" autocomplete="new-password" required>
+              <span class="validation-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password *</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" autocomplete="new-password" required>
+              <span class="validation-message"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="favoriteFighter">Favorite Fighter *</label>
+            <select id="favoriteFighter" name="favoriteFighter" required>
+              <option value="">Select your favorite fighter</option>
+              <option value="merab">Merab Dvalishvili — "The Machine"</option>
+              <option value="ilia">Ilia Topuria — "El Matador"</option>
+              <option value="giga">Giga Chikadze — "Ninja"</option>
+              <option value="roman">Roman Dolidze — "The Caucasian"</option>
+              <option value="other">Other Georgian Fighter</option>
+            </select>
+            <span class="validation-message"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Benefits Section ========== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Member Benefits</h2>
+        <p>Why join the UFC Georgia community?</p>
+      </div>
+      <div class="about-stats reveal" style="max-width: 800px; margin: 0 auto;">
+        <div class="glass-card stat-card">
+          <span style="font-size: 2.5rem; color: var(--color-red);">&#127915;</span>
+          <span class="stat-label">Exclusive Event Access</span>
+        </div>
+        <div class="glass-card stat-card">
+          <span style="font-size: 2.5rem; color: var(--color-red);">&#128240;</span>
+          <span class="stat-label">Fighter News &amp; Updates</span>
+        </div>
+        <div class="glass-card stat-card">
+          <span style="font-size: 2.5rem; color: var(--color-red);">&#127942;</span>
+          <span class="stat-label">Community Competitions</span>
+        </div>
+        <div class="glass-card stat-card">
+          <span style="font-size: 2.5rem; color: var(--color-red);">&#128172;</span>
+          <span class="stat-label">Fan Forum Access</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">UG</span>
+            UFC Georgia
+          </a>
+          <p>The official fan community celebrating Georgian UFC fighters and mixed martial arts culture.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Fighters</h4>
+          <ul>
+            <li><a href="index.html#fighters">Merab Dvalishvili</a></li>
+            <li><a href="index.html#fighters">Ilia Topuria</a></li>
+            <li><a href="index.html#fighters">Giga Chikadze</a></li>
+            <li><a href="index.html#fighters">Roman Dolidze</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Tbilisi, Georgia</a></li>
+            <li><a href="mailto:info@ufcgeorgia.ge">info@ufcgeorgia.ge</a></li>
+            <li><a href="tel:+995322000000">+995 32 200 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 UFC Georgia Fan Community. This is an unofficial fan website.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
